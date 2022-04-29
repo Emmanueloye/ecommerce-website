@@ -146,9 +146,20 @@
             </ul>
           </div>
           <div class="nav-action">
-            <span class="nav-action-link e-d-none"
+            <label for="searchbox" class="nav-action-link e-d-none"
               ><i class="fa-solid fa-magnifying-glass"></i
-            ></span>
+            ></label>
+            <input type="checkbox" id="searchbox" hidden />
+            <div class="searchbox">
+              <form action="" style="display: flex">
+                <input
+                  type="text"
+                  class="e-form-input"
+                  placeholder="Search here..."
+                />
+                <input type="submit" class="btn-search" value="Search" />
+              </form>
+            </div>
             <a href="#" class="nav-action-link"
               ><i class="fa-solid fa-cart-shopping"></i>
               <span class="e-badge-phot">5</span>

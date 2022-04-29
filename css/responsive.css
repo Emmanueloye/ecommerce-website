@@ -53,20 +53,25 @@
 }
 
 @media (max-width: 996px) {
+    
     .mgt-2 {
         margin-top: 2.5rem;
     }
     .e-nav-links-ul {
         background-color: var(--dark-color);
         flex-direction: column;
-        position: fixed;
-        top: 92px;
+        position: absolute;
+        top: 50px;
         left: -100%;
         width: 40%;
         height: 100vh;
         overflow-y: auto;
         transition: all .4s ease-in-out;
         z-index: 1000;
+    }
+    #menu-bar-toggle:checked ~ .e-nav-links-ul {
+        left: -51px;
+        
     }
     .e-nav-link {
         color: var(--light-color);
@@ -130,11 +135,7 @@
         top: 0;
         right: 10px;
     }
-    #menu-bar-toggle:checked ~ .e-nav-links-ul {
-        left: 0;
-    }
-
-    .e-nav-links-ul::-webkit-scrollbar {
+       .e-nav-links-ul::-webkit-scrollbar {
         width: 0px;
     }
     .e-card-img {

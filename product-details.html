@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.css" />
+    <!-- AOS pluggin -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page-header">
+      <!-- Top naviagation -->
+      <div class="top-nav e-row">
+        <div class="e-container e-row">
+          <div class="socials">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <div class="user-account">
+            <label for="account" class="user-label"
+              >My Account <i class="fa-solid fa-caret-down"></i
+            ></label>
+            <input type="checkbox" id="account" hidden />
+            <ul class="account-dropdown">
+              <li>
+                <span><i class="fa-solid fa-arrow-right-to-bracket"></i></span>
+                <a href="#">Login</a>
+              </li>
+              <li>
+                <span><i class="fa-solid fa-pencil"></i></span>
+                <a href="#">Register</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- end top naviagation -->
+      <!-- main naviagation -->
+      <div class="e-container">
+        <nav class="nav-content">
+          <div class="e-nav-branding">
+            <a href="#" class="e-nav-brand">MettyHair</a>
+          </div>
+          <div class="main-navbar">
+            <input type="radio" name="e-toggler" id="cancel-btn" hidden />
+            <input type="radio" name="e-toggler" id="menu-bar-toggle" hidden />
+            <ul class="e-nav-links-ul">
+              <label for="cancel-btn" class="cancel-btn"
+                ><i class="fa-solid fa-square-xmark"></i
+              ></label>
+              <li class="e-nav-item">
+                <a href="#" class="e-nav-link mgt-2">Home</a>
+              </li>
+              <li class="e-nav-item">
+                <a href="#" class="e-nav-link desktop-toggle">Hair store</a>
+                <input type="checkbox" id="mobile-toggle" hidden />
+                <label for="mobile-toggle" class="mobile-menu"
+                  >Hair store</label
+                >
+                <div class="e-dropdown">
+                  <div class="e-row">
+                    <ul class="mega-menu-wrapper">
+                      <a href="#" class="mega-menu-heading">Heading 1</a>
+                      <li class="mega-menu-item">
+                        <a href="#" class="menu-link">Sub heading 1</a>
+                      </li>
+                      <li class="mega-menu-item">
+                        <a href="#" class="menu-link">Sub heading 1</a>
+                      </li>
+                      <li class="mega-menu-item">
+                        <a href="#" class="menu-link">Sub heading 1</a>
+                      </li>
+                    </ul>
+                    <ul class="mega-menu-wrapper">
+                      <a href="#" class="mega-menu-heading">Heading 1</a>
+                      <li class="mega-menu-item">
+                        <a href="#" class="menu-link">Sub heading 1</a>
+                      </li>
+                      <li class="mega-menu-item">
+                        <a href="#" class="menu-link">Sub heading 1</a>
+                      </li>
+                      <li class="mega-menu-item">
+                        <a href="#" class="menu-link">Sub heading 1</a>
+                      </li>
+                    </ul>
+                    <ul class="mega-menu-wrapper">
+                      <a href="#" class="mega-menu-heading">Heading 1</a>
+                      <li class="mega-menu-item">
+                        <a href="#" class="menu-link">Sub heading 1</a>
+                      </li>
+                      <li class="mega-menu-item">
+                        <a href="#" class="menu-link">Sub heading 1</a>
+                      </li>
+                      <li class="mega-menu-item">
+                        <a href="#" class="menu-link">Sub heading 1</a>
+                      </li>
+                    </ul>
+                    <ul class="mega-menu-wrapper">
+                      <a href="#" class="mega-menu-heading">Heading 1</a>
+                      <li class="mega-menu-item">
+                        <a href="#" class="menu-link">Sub heading 1</a>
+                      </li>
+                      <li class="mega-menu-item">
+                        <a href="#" class="menu-link">Sub heading 1</a>
+                      </li>
+                      <li class="mega-menu-item">
+                        <a href="#" class="menu-link">Sub heading 1</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="e-nav-item">
+                <a href="#" class="e-nav-link">Wears</a>
+              </li>
+              <li class="e-nav-item">
+                <a href="#" class="e-nav-link">Dropdown</a>
+              </li>
+              <li class="e-nav-item">
+                <a href="#" class="e-nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-action">
+            <span class="nav-action-link e-d-none"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></span>
+            <a href="#" class="nav-action-link"
+              ><i class="fa-solid fa-cart-shopping"></i>
+              <span class="e-badge-phot">5</span>
+            </a>
+          </div>
+          <label for="menu-bar-toggle" class="menu-bar-toggle"
+            ><i class="fa-solid fa-bars"></i
+          ></label>
+        </nav>
+      </div>
+      <!------------- End main navigation ------------>
+    </div>
+    <div class="e-breadcum">
+      <div class="e-container">
+        <a href="/" class="link">Home /</a>
+        <a href="product-details.html" class="link active">Product details</a>
+      </div>
+    </div>
+    <div class="product-details">
+      <div class="e-container">
+        <div class="e-row">
+          <div class="e-col-4" data-aos="zoom-in-up">
+            <div class="main-image">
+              <img src="images/image-3.jpeg" alt="main product image" />
+            </div>
+            <div class="thumbnails">
+              <div class="thumbnails-images">
+                <img
+                  src="images/image-211.png"
+                  class="thumb-img active"
+                  alt="product image"
+                />
+                <img
+                  src="images/image-3.jpeg"
+                  class="thumb-img"
+                  alt="product image"
+                />
+                <img
+                  src="images/image-1.jpeg"
+                  class="thumb-img"
+                  alt="product image"
+                />
+                <img
+                  src="images/image-211.png"
+                  class="thumb-img"
+                  alt="product image"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="e-col-8 p-main-details" data-aos="zoom-in-up">
+            <div class="p-info-sec">
+              <h2 class="product-name">Product Name</h2>
+              <div class="p-type">
+                <span class="p-subhead">Product type: </span>
+                <span class="p-t-txt">Human Hair</span>
+              </div>
+              <div class="p-type">
+                <span class="p-subhead">Available Length: </span>
+                <span class="p-t-txt">12", 30"</span>
+              </div>
+              <div class="p-type">
+                <span class="p-subhead">Available Color: </span>
+                <span class="p-t-txt">Black, Pink, Red</span>
+              </div>
+              <div class="review">
+                <span><i class="fa-solid fa-star checked"></i></span>
+                <span><i class="fa-solid fa-star checked"></i></span>
+                <span><i class="fa-solid fa-star checked"></i></span>
+                <span><i class="fa-solid fa-star unchecked"></i></span>
+                <span><i class="fa-solid fa-star unchecked"></i></span>
+                <span>(3 Reviews)</span>
+              </div>
+            </div>
+            <div class="spec p-info-sec">
+              <h3 class="spec-head">Product Description</h3>
+              <p class="short-desc">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi
+                exercitationem incidunt, rem vero debitis corrupti, eligendi
+                velit omnis porro aspernatur est labore? Dolores, fuga. Animi
+                cumque sit repellat. Odit, fugiat?
+              </p>
+            </div>
+            <div class="pricing p-info-sec">
+              <h3 class="spec-head">Price</h3>
+              <div class="price">
+                <p class="d-price">&#8358;200,000</p>
+                <p class="s-price">&#8358;200,000</p>
+              </div>
+            </div>
+            <div class="other-spec p-info-sec">
+              <h3 class="spec-head">Make your choice</h3>
+              <select name="color" id="color" class="input-select">
+                <option value="default" selected disabled>Choose Color</option>
+                <option value="Black">Black</option>
+                <option value="Pink">Pink</option>
+                <option value="Red">Red</option>
+              </select>
+              <select name="length" id="length" class="input-select">
+                <option value="default" selected disabled>Choose Length</option>
+                <option value='12"'>12"</option>
+                <option value='30"'>30"</option>
+              </select>
+
+              <div class="quantity">
+                <label for="form-qty" class="p-subhead">Quantity:</label>
+                <input type="number" id="form-qty" class="form-qty" min="1" />
+              </div>
+            </div>
+
+            <div class="p-action">
+              <button class="p-cart-btn">Add to Cart</button>
+              <a href="#" class="p-cart-btn buy-btn">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------------- End product details section ---------------->
+    <!-------------- Description and review system ----------------->
+    <div class="e-container" data-aos="zoom-in-up">
+      <div class="tab">
+        <div class="e-row">
+          <div class="e-col-3">
+            <div class="e-tab-links">
+              <button class="e-tab-btn active" data-id="tab-1">
+                Description
+              </button>
+              <button class="e-tab-btn" data-id="tab-2">Reviews</button>
+            </div>
+          </div>
+          <div class="e-col-9">
+            <div class="e-tab-content">
+              <!-- First pane -->
+              <div class="e-tab-pane show" id="tab-1">
+                <div class="long-desc">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Neque laboriosam provident eum nobis dolorem. Ullam eos
+                    reprehenderit, ea natus iure harum adipisci sint quia optio?
+                    Similique quod ex quisquam, voluptatem culpa laboriosam ipsa
+                    aut in iste. Neque sunt consequatur commodi vero hic ullam
+                    corporis minima illo quisquam, esse, sed modi.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Neque laboriosam provident eum nobis dolorem. Ullam eos
+                    reprehenderit, ea natus iure harum adipisci sint quia optio?
+                    Similique quod ex quisquam, voluptatem culpa laboriosam ipsa
+                    aut in iste. Neque sunt consequatur commodi vero hic ullam
+                    corporis minima illo quisquam, esse, sed modi.
+                  </p>
+                </div>
+              </div>
+              <!-- Second pane -->
+              <div class="e-tab-pane cust-rev" id="tab-2">
+                <button class="btn-review js-b">Add Review</button>
+                <h3 class="spec-head">Customers' Review</h3>
+                <div class="all-reviews">
+                  <div class="user-review">
+                    <div class="u-info">
+                      <img src="images/image-1.jpeg" alt="user image" />
+                      <p class="u-name">Iremide Emmanuel</p>
+                    </div>
+                    <div class="r-summary">
+                      <span class="r-sum r-x">The best quality ever</span>
+                      <span class="r-time r-x"
+                        ><i class="fa-solid fa-calendar"></i> 2 weeks ago</span
+                      >
+                    </div>
+                    <div class="m-review">
+                      <p class="m-rev">
+                        <i class="fa-solid fa-comment"></i>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Deleniti illo voluptatem aliquam perferendis. Eum
+                        placeat impedit in consequuntur, ullam provident?
+                      </p>
+                    </div>
+                  </div>
+                  <div class="user-review">
+                    <div class="u-info">
+                      <img src="images/image-1.jpeg" alt="user image" />
+                      <p class="u-name">Iremide Emmanuel</p>
+                    </div>
+                    <div class="r-summary">
+                      <span class="r-sum r-x">The best quality ever</span>
+                      <span class="r-time r-x"
+                        ><i class="fa-solid fa-calendar"></i> 2 weeks ago</span
+                      >
+                    </div>
+                    <div class="m-review">
+                      <p class="m-rev">
+                        <i class="fa-solid fa-comment"></i>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Deleniti illo voluptatem aliquam perferendis. Eum
+                        placeat impedit in consequuntur, ullam provident?
+                      </p>
+                    </div>
+                  </div>
+                  <div class="user-review">
+                    <div class="u-info">
+                      <img src="images/image-1.jpeg" alt="user image" />
+                      <p class="u-name">Iremide Emmanuel</p>
+                    </div>
+                    <div class="r-summary">
+                      <span class="r-sum r-x">The best quality ever</span>
+                      <span class="r-time r-x"
+                        ><i class="fa-solid fa-calendar"></i> 2 weeks ago</span
+                      >
+                    </div>
+                    <div class="m-review">
+                      <p class="m-rev">
+                        <i class="fa-solid fa-comment"></i>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Deleniti illo voluptatem aliquam perferendis. Eum
+                        placeat impedit in consequuntur, ullam provident?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Third pane -->
+              <div class="e-tab-pane review-form" id="tab-3">
+                <h3 class="spec-head mgt-2">
+                  Thanks for your patronage. Please add your review for this
+                  product
+                </h3>
+                <form action="">
+                  <div class="review">
+                    <span class="p-subhead">Ratings (1 -5): </span>
+                    <span><i class="fa-solid fa-star checked"></i></span>
+                    <span><i class="fa-solid fa-star checked"></i></span>
+                    <span><i class="fa-solid fa-star checked"></i></span>
+                    <span><i class="fa-solid fa-star unchecked"></i></span>
+                    <span><i class="fa-solid fa-star unchecked"></i></span>
+                  </div>
+                  <div class="e-form-group">
+                    <h3 class="p-subhead">Review Summary <span>*</span></h3>
+                    <input type="text" id="summary" class="form-input" />
+                  </div>
+                  <div class="e-form-group">
+                    <h3 class="p-subhead">Review <span>*</span></h3>
+                    <textarea
+                      name="review"
+                      id="review"
+                      class="form-input"
+                      cols="30"
+                      rows="5"
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn-review">
+                    Submit Review
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------ Related Products ----------->
+    <div class="new-section">
+      <div class="e-container section-box">
+        <h2 class="sec-heading">Related Products</h2>
+        <div class="owl-carousel owl-theme">
+          <div class="e-card" data-aos="zoom-in-up">
+            <a href="#">
+              <div class="e-card-img">
+                <img src="images/image-11.png" alt="Product image" />
+              </div>
+              <span class="e-badge-hot">Hot</span>
+            </a>
+            <a href="">
+              <div class="e-card-body">
+                <h3 class="e-card-title">Product Name</h3>
+                <div class="review">
+                  <span><i class="fa-solid fa-star checked"></i></span>
+                  <span><i class="fa-solid fa-star checked"></i></span>
+                  <span><i class="fa-solid fa-star checked"></i></span>
+                  <span><i class="fa-solid fa-star unchecked"></i></span>
+                  <span><i class="fa-solid fa-star unchecked"></i></span>
+                </div>
+                <p class="e-card-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Dolor soluta officia, unde facilis sapiente doloribus.
+                </p>
+                <div class="e-pricing">
+                  <p class="d-price">&#8358;200,000</p>
+                  <p class="s-price">&#8358;200,000</p>
+                </div>
+              </div>
+            </a>
+            <button class="cart-btn">Add to cart</button>
+          </div>
+          <div class="e-card" data-aos="zoom-in-up">
+            <a href="#">
+              <div class="e-card-img">
+                <img src="images/image-11.png" alt="Product image" />
+              </div>
+            </a>
+            <a href="">
+              <div class="e-card-body">
+                <h3 class="e-card-title">Product Name</h3>
+                <div class="review">
+                  <span><i class="fa-solid fa-star checked"></i></span>
+                  <span><i class="fa-solid fa-star checked"></i></span>
+                  <span><i class="fa-solid fa-star checked"></i></span>
+                  <span><i class="fa-solid fa-star unchecked"></i></span>
+                  <span><i class="fa-solid fa-star unchecked"></i></span>
+                </div>
+                <p class="e-card-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Dolor soluta officia, unde facilis sapiente doloribus.
+                </p>
+                <div class="e-pricing">
+                  <p class="d-price">&#8358;200,000</p>
+                  <p class="s-price">&#8358;200,000</p>
+                </div>
+              </div>
+            </a>
+            <button class="cart-btn">Add to cart</button>
+          </div>
+          <div class="e-card" data-aos="zoom-in-up">
+            <a href="#">
+              <div class="e-card-img">
+                <img src="images/image-11.png" alt="Product image" />
+              </div>
+            </a>
+            <a href="">
+              <div class="e-card-body">
+                <h3 class="e-card-title">Product Name</h3>
+                <div class="review">
+                  <span><i class="fa-solid fa-star checked"></i></span>
+                  <span><i class="fa-solid fa-star checked"></i></span>
+                  <span><i class="fa-solid fa-star checked"></i></span>
+                  <span><i class="fa-solid fa-star unchecked"></i></span>
+                  <span><i class="fa-solid fa-star unchecked"></i></span>
+                </div>
+                <p class="e-card-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Dolor soluta officia, unde facilis sapiente doloribus.
+                </p>
+                <div class="e-pricing">
+                  <p class="d-price">&#8358;200,000</p>
+                  <p class="s-price">&#8358;200,000</p>
+                </div>
+              </div>
+            </a>
+            <button class="cart-btn">Add to cart</button>
+          </div>
+          <div class="e-card" data-aos="zoom-in-up">
+            <a href="#">
+              <div class="e-card-img">
+                <img src="images/image-11.png" alt="Product image" />
+              </div>
+            </a>
+            <a href="">
+              <div class="e-card-body">
+                <h3 class="e-card-title">Product Name</h3>
+                <div class="review">
+                  <span><i class="fa-solid fa-star checked"></i></span>
+                  <span><i class="fa-solid fa-star checked"></i></span>
+                  <span><i class="fa-solid fa-star checked"></i></span>
+                  <span><i class="fa-solid fa-star unchecked"></i></span>
+                  <span><i class="fa-solid fa-star unchecked"></i></span>
+                </div>
+                <p class="e-card-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Dolor soluta officia, unde facilis sapiente doloribus.
+                </p>
+                <div class="e-pricing">
+                  <p class="d-price">&#8358;200,000</p>
+                  <p class="s-price">&#8358;200,000</p>
+                </div>
+              </div>
+            </a>
+            <button class="cart-btn">Add to cart</button>
+          </div>
+        </div>
+        <div class="e-shop-now">
+          <a href="#" class="action-btn"
+            >Shop Now <i class="fa-solid fa-angles-right"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!------- Footer ---------->
+    <footer class="page-footer">
+      <div class="e-container">
+        <div class="e-row">
+          <div class="business-info">
+            <p class="biz-details">
+              <i class="fa-solid fa-building"></i> Metty General Merchant
+            </p>
+            <p class="biz-details">
+              <i class="fa-solid fa-location-dot"></i>
+              15, Olanrewaju Street, Bishop Aggey,<br />
+              Mushin, Lagos Nigeria
+            </p>
+            <p class="biz-details">
+              <a href="tel:2348101836991" class="biz-details"
+                ><i class="fa-solid fa-phone"></i> 08101836991</a
+              >
+            </p>
+            <p class="biz-details">
+              <a href="mailto:mettyhair@gmail.com" class="biz-details"
+                ><i class="fa-solid fa-envelope"></i> mettyhair@gmail.com</a
+              >
+            </p>
+          </div>
+          <div class="information">
+            <h3 class="info-header">Information</h3>
+            <ul class="footer-list">
+              <li>
+                <a href="#">About us</a>
+              </li>
+              <li>
+                <a href="#">Customer Services</a>
+              </li>
+              <li>
+                <a href="#">contact us</a>
+              </li>
+              <li>
+                <a href="#">Return Policy</a>
+              </li>
+              <li>
+                <a href="#">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="information">
+            <h3 class="info-header">Working days & hours</h3>
+            <ul class="footer-list">
+              <li>Mon - Fri: 8:30am - 5pm</li>
+              <li>Sat: 11am - 4pm</li>
+              <li>24hours help line: 08101836991 (chat only)</li>
+            </ul>
+          </div>
+          <div class="biz-socials">
+            <h3 class="info-header">Socials</h3>
+            <ul>
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-brands fa-instagram-square"></i> Instagram</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; Copyright <span class="year"></span></p>
+          <p>Site developed by Oyediran Emmanuel</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Pluggins -->
+    <script src="js/jquery.js"></script>
+
+    <!-- owl carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/owl-carousel.js"></script>
+    <script src="js/product-details.js"></script>
+    <script>
+      let date = new Date();
+      let year = date.getFullYear();
+      document.querySelector(".year").innerHTML = year;
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

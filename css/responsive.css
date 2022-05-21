@@ -1,4 +1,9 @@
-@media (max-width: 1085px) {
+@media (min-width: 1800px) {
+    .e-card-img {
+        height: 550px;
+    }
+}
+@media (max-width: 1090px) {
     .e-card-img {
         height: 535px;
     }
@@ -348,7 +353,7 @@
    
 }
 
-@media (max-width: 630px) {
+@media (max-width: 665px) {
     .coupon-section.e-col-6 {
         width: 100%;
     }
@@ -366,6 +371,12 @@
     }
     .e-card-img {
         height: 520px;
+    }
+    .h-icon {
+        margin-left: 0;
+    }
+    .h-icon i {
+        margin-bottom: 1.2rem;
     }
 }
 

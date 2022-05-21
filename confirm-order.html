@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Confirmation</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+      }
+      body {
+        min-height: 100%;
+        position: relative;
+        padding-bottom: 200px;
+      }
+      .mail-header {
+        background-color: #396eb0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 200px;
+        line-height: 2;
+      }
+      .logo {
+        color: #fff;
+        font-family: "Montserrat", sans-serif;
+        font-size: 30px;
+        font-weight: 800;
+        font-style: italic;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .logo span {
+        color: #b8405e;
+      }
+      .mail-icon i {
+        color: #fff;
+        font-size: 60px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+      .mail-msg {
+        font-size: 20px;
+        color: #fff;
+        margin-bottom: 20px;
+      }
+      .mail-body {
+        width: 80%;
+        margin: 0 auto;
+      }
+      .mail-txt {
+        font-size: 15px;
+        margin-top: 15px;
+        text-align: justify;
+      }
+
+      .txt-1 {
+        font-weight: bold;
+        margin-top: 20px;
+      }
+      .txt-m {
+        color: #b8405e;
+        font-weight: 500;
+      }
+      .mail-details {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        border: 1px solid #dddddd;
+        padding: 10px;
+      }
+      .mail-mg {
+        margin-bottom: 30px;
+      }
+      .mail-details img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+      }
+      .mail-sum-sec {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 10px;
+      }
+      .m-sum {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .m-txt,
+      .m-fig {
+        display: flex;
+        justify-content: center;
+        color: #396eb0;
+        font-size: 16px;
+        font-weight: 500;
+        border: 1px solid #dddddd;
+        padding: 10px;
+        margin-bottom: 20px;
+        width: 100px;
+      }
+      .m-txt {
+        margin-right: 25px;
+      }
+      .m-fig {
+        width: 150px;
+      }
+      .m-footer {
+        color: #dddddd;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #396eb0;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+      }
+      .m-footer .mail-txt {
+        text-align: center;
+      }
+      .m-footer .logo {
+        margin-bottom: 10px;
+      }
+      .b-mg {
+        margin-bottom: 20px;
+      }
+      .m-footer a {
+        color: #dddddd;
+      }
+      @media (max-width: 500px) {
+        .mail-details {
+          flex-direction: column;
+        }
+        .mail-sum-sec {
+          align-items: center;
+        }
+        .m-txt {
+          margin-right: 2px;
+        }
+        .m-txt {
+          width: 80px;
+        }
+        .m-fig {
+          width: 100px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mail-header">
+      <h2 class="logo">Metty<span>hair</span></h2>
+      <div class="mail-icon"><i class="fa-solid fa-circle-check"></i></div>
+      <h3 class="mail-msg">Thank you for your order</h3>
+    </div>
+    <div class="mail-body">
+      <p class="mail-txt txt-1">Dear Iremide,</p>
+      <p class="mail-txt">
+        Thank you for choosing us a your hair plug. We appreciate your patronage
+        and we would like to see you soon again.
+      </p>
+      <div class="mail-txt mail-mg">Please find below your order details:</div>
+      <div class="mail-details">
+        <img src="images/image-2.jpeg" alt="Product image" />
+        <div class="mail-txt txt-m">2pcs</div>
+        <div class="mail-txt txt-m">N200,000</div>
+        <div class="mail-txt txt-m">N400,000</div>
+      </div>
+      <div class="mail-details">
+        <img src="images/image-2.jpeg" alt="Product image" />
+        <div class="mail-txt txt-m">2pcs</div>
+        <div class="mail-txt txt-m">N200,000</div>
+        <div class="mail-txt txt-m">N400,000</div>
+      </div>
+      <div class="mail-details">
+        <img src="images/image-2.jpeg" alt="Product image" />
+        <div class="mail-txt txt-m">2pcs</div>
+        <div class="mail-txt txt-m">N200,000</div>
+        <div class="mail-txt txt-m">N400,000</div>
+      </div>
+      <div class="mail-sum-sec">
+        <div class="mail-sum">
+          <div class="m-sum">
+            <span class="m-txt">Subtotal: </span>
+            <span class="m-fig">N400,000 </span>
+          </div>
+          <div class="m-sum">
+            <span class="m-txt">Discount: </span>
+            <span class="m-fig">N400,000 </span>
+          </div>
+          <div class="m-sum">
+            <span class="m-txt">Total: </span>
+            <span class="m-fig">N40,000,000 </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="m-footer">
+      <div class="mail-body">
+        <h4 class="logo">Metty<span>hair</span></h4>
+        <p class="mail-txt">
+          15, Olanrewaju Street, Opposite Bishop Aggey, Mushin Lagos
+        </p>
+        <p class="mail-txt">
+          Telephone: <a href="tel:08114787914">08114787914</a>
+        </p>
+        <p class="mail-txt b-mg">
+          Email:
+          <a href="mailto:support@mettyhair.com">support@mettyhair.com</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

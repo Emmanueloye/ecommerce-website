@@ -7,6 +7,7 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/datatables.min.css">
     <!-- Owl carousel -->
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/owl.theme.default.css" />
@@ -203,7 +204,7 @@
             <div class="profile-wrapper mgt-4">
               <div class="profile-card">
                <div class="e-table-responsive">
-                 <table>
+                 <table id="myTable">
                    <thead>
                      <tr>
                        <th>Order Date</th>
@@ -339,6 +340,7 @@
 
     <!-- Pluggins -->
     <script src="js/jquery.js"></script>
+    <script src="js/datatables.min.js"></script>
 
     <!-- owl carousel -->
     <script src="js/owl.carousel.min.js"></script>
@@ -349,6 +351,27 @@
       let date = new Date();
       let year = date.getFullYear();
       document.querySelector(".year").innerHTML = year;
+    </script>
+
+    <script>
+      $(document).ready(function () {
+  $("#myTable").DataTable({
+    columnDefs: [
+      {
+        targets: [0],
+        orderData: [0, 1],
+      },
+      {
+        targets: [1],
+        orderData: [1, 0],
+      },
+      {
+        targets: [4],
+        orderData: [4, 0],
+      },
+    ],
+  });
+});
     </script>
   </body>
 </html>
